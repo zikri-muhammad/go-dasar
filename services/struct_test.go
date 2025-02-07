@@ -1,4 +1,6 @@
-package main
+package services
+
+import "testing"
 
 type Customer struct {
 	Name, Address string
@@ -9,7 +11,7 @@ func (customer Customer) sayHello(name string) {
 	println("Hello", name, "My name is", customer.Name)
 }
 
-func main() {
+func TestStruct(t *testing.T) {
 	var customer Customer
 	customer.Name = "Muhammad"
 	customer.Address = "Indonesia"

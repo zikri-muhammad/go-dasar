@@ -1,6 +1,9 @@
-package main
+package services
 
-func main() {
+import "testing"
+
+func TestPerulangan(t *testing.T) {
+
 	days := []string{"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"}
 	for index, day := range days {
 		println(index, day)

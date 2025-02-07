@@ -1,6 +1,9 @@
-package main
+package services
 
-func main() {
+import "testing"
+
+func TestMap(t *testing.T) {
+
 	person := make(map[string]string)
 	person["name"] = "Muhammad Zikri"
 	person["age"] = "23"

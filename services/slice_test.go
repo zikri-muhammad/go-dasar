@@ -1,8 +1,12 @@
-package main
+package services
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
+func TestSlice(t *testing.T) {
+
 	names := []string{"Muhammad", "Zikri", "Jane", "Doe", "naruto", "sasuke"}
 	slice := names[4:6]
 

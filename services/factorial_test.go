@@ -1,4 +1,6 @@
-package main
+package services
+
+import "testing"
 
 func factorialLoop(n int) int {
 	result := 1
@@ -15,7 +17,7 @@ func factorialRecursive(n int) int {
 	return n * factorialRecursive(n-1)
 }
 
-func main() {
+func TestFactory(t *testing.T) {
 	println(factorialLoop(5))
 	println(factorialRecursive(5))
 }

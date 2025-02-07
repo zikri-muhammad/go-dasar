@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"net/http"
 	"strconv"
 
@@ -47,8 +48,8 @@ func ToCsvText(array [][]int) string {
 }
 
 func main() {
-	fmt.println(Move(0, 4))
-	fmt.println(ToCsvText([][]int{
+	fmt.Println(Move(0, 4))
+	fmt.Println(ToCsvText([][]int{
 		{0, 1, 2, 3, 45},
 		{10, 11, 12, 13, 14},
 		{20, 21, 22, 23, 24},

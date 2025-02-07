@@ -1,4 +1,4 @@
-package main
+package services
 
 func AmIWilson(n int) bool {
 	if n == 0 || n == 1 {

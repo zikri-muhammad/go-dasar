@@ -1,4 +1,6 @@
-package main
+package services
+
+import "testing"
 
 // if we want to pass a function as a parameter, we need to define the function signature
 // func sayHelloWithFilter(name string, filter func(string) string) {
@@ -21,7 +23,8 @@ func spamFilter(name string) string {
 	}
 }
 
-func main() {
+func TestFunction(t *testing.T) {
+
 	// sayHelloWithFilter("Anjing", spamFilter)
 	sayHelloWithFilter("Muhammad", spamFilter)
 
