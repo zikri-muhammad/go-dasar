@@ -15,5 +15,12 @@ func learnArray(arr []int) int {
 }
 
 func TestArrays(t *testing.T) {
-	learnArray([]int{1, 2, 3, 4, 5}) // true
+	result := learnArray([]int{1, 2, 3, 4, 5}) // true
+
+	fmt.Println("result ", result)
+	expected := 5
+    
+    if result != expected {
+        t.Errorf("Expected array length to be %d, but got %d", expected, result)
+    }
 }
